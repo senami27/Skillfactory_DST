@@ -1,6 +1,6 @@
 ## Оглавление
 
-[1. Описание проекта](https://github.com/senami27/Project-1_HH/blob/master/README.md#Описание-проекта)\
+[1. Описание проекта](https://github.com/senami27/SF_DST/Project-1/blob/master/README.md#Описание-проекта)\
 [2. Краткая информация о данных](https://github.com/senami27/Project-1_HH/blob/master/README.md#Краткая-информация-о-данных)\
 [3. Этапы работы над проектом](https://github.com/senami27/Project-1_HH/blob/master/README.md#Этапы-работы-над-проектом)\
 [4. Структура проекта](https://github.com/senami27/Project-1_HH/blob/master/README.md#Структура-проекта)\
