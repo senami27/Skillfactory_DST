@@ -1,23 +1,23 @@
 ## Оглавление
 
-[1. Описание проекта](https://github.com/senami27/Skillfactory_DST/edit/master/SF_DST/Practice-1/README.md#Описание-проекта)\
-[2. Краткая информация о данных](https://github.com/senami27/Skillfactory_DST/edit/master/SF_DST/Practice-1/README.md#Краткая-информация-о-данных)\
-[3. Этапы работы над проектом](https://github.com/senami27/Skillfactory_DST/edit/master/SF_DST/Practice-1/README.md#Этапы-работы-над-проектом)\
-[4. Структура проекта](https://github.com/senami27/Skillfactory_DST/edit/master/SF_DST/Practice-1/README.mdd#Структура-проекта)\
-[5. Результат](https://github.com/senami27/Skillfactory_DST/edit/master/SF_DST/Practice-1/README.md#Результат)\
-[6. Выводы](https://github.com/senami27/Skillfactory_DST/edit/master/SF_DST/Practice-1/README.md#Выводы)
+[1. Описание проекта](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-1/README.md#Описание-проекта)\
+[2. Краткая информация о данных](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-1/README.md#Краткая-информация-о-данных)\
+[3. Этапы работы над проектом](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-1/README.md#Этапы-работы-над-проектом)\
+[4. Структура проекта](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-1/README.mdd#Структура-проекта)\
+[5. Результат](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-1/README.md#Результат)\
+[6. Выводы](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-1/README.md#Выводы)
 
 ### Описание проекта
 
 Банк хочет разработать кампанию лояльности по удержанию клиентов. Необходимо, выяснить основные причины оттока клиентов, установить, чем ушедшие клиенты отличаются от лояльных, и как между собой связаны различные признаки, определяющие клиентов.
 
-:arrow_up:[к оглавлению](https://github.com/senami27/Skillfactory_DST/edit/master/SF_DST/Practice-1/README.md#Оглавление)
+:arrow_up:[к оглавлению](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-1/README.md#Оглавление)
 
 ### Краткая информация о данных
 
 Исходный датасет представляет собой CSV файл весом 669 МБ. В нем представлены данные об оттоке клиентов некоторого банка с количеством строк 1000 в разрезе 13 признаков.
 
-:arrow_up:[к оглавлению](https://github.com/senami27/Skillfactory_DST/edit/master/SF_DST/Practice-1/README.md#Оглавление)
+:arrow_up:[к оглавлению](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-1/README.md#Оглавление)
 
 ### Этапы работы над проектом
 
@@ -36,21 +36,21 @@
    - Сравнение доли ушедших клиентов в разрезе страны;
    - Влияние кредитного рейтинга и количетва лет пользования банком на отток клиентов;
 
-:arrow_up:[к оглавлению](https://github.com/senami27/Skillfactory_DST/edit/master/SF_DST/Practice-1/README.md#Оглавление)
+:arrow_up:[к оглавлению](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-1/README.md#Оглавление)
 
 ### Структура проекта
 
-[data](https://github.com/senami27/Skillfactory_DST/edit/master/SF_DST/Practice-1/data) - папка с исходными табличными данными
+[data](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-1/data) - папка с исходными табличными данными
 
-[HW-1.ipynb](https://github.com/senami27/Skillfactory_DST/edit/master/SF_DST/Practice-1/HW-1.ipynb) - jupyter-ноутбук, с кодом проекта
+[HW-1.ipynb](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-1/HW-1.ipynb) - jupyter-ноутбук, с кодом проекта
 
-:arrow_up:[к оглавлению](https://github.com/senami27/Skillfactory_DST/edit/master/SF_DST/Practice-1/README.md#Оглавление)
+:arrow_up:[к оглавлению](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-1/README.md#Оглавление)
 
 ### Результат
 
 В результате проекта было построено 10 графиков, отображающих влияние признаков на отток клиентов банка.
 
-:arrow_up:[к оглавлению](https://github.com/senami27/Skillfactory_DST/edit/master/SF_DST/Practice-1/README.md#Оглавление)
+:arrow_up:[к оглавлению](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-1/README.md#Оглавление)
 
 ### Выводы
 
@@ -63,4 +63,4 @@
 
 С помощью выводов, представленных в работе, банк далее сможет построить модель машинного обучения, которая будет прогнозировать уход клиента.
 
-:arrow_up:[к оглавлению](https://github.com/senami27/Skillfactory_DST/edit/master/SF_DST/Practice-1/README.md#Оглавление)
+:arrow_up:[к оглавлению](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-1/README.md#Оглавление)
