@@ -1,11 +1,11 @@
 ## Оглавление
 
 [1. Описание проекта](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Project-1/README.md#Описание-проекта)\
-[2. Краткая информация о данных](https://github.com/senami27/Project-1_HH/blob/master/README.md#Краткая-информация-о-данных)\
-[3. Этапы работы над проектом](https://github.com/senami27/Project-1_HH/blob/master/README.md#Этапы-работы-над-проектом)\
-[4. Структура проекта](https://github.com/senami27/Project-1_HH/blob/master/README.md#Структура-проекта)\
-[5. Результат](https://github.com/senami27/Project-1_HH/blob/master/README.md#Результат)\
-[6. Выводы](https://github.com/senami27/Project-1_HH/blob/master/README.md#Выводы)
+[2. Краткая информация о данных](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Project-1/README.md#Краткая-информация-о-данных)\
+[3. Этапы работы над проектом](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Project-1/README.md#Этапы-работы-над-проектом)\
+[4. Структура проекта](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Project-1/README.md#Структура-проекта)\
+[5. Результат](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Project-1/README.md#Результат)\
+[6. Выводы](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Project-1/README.md#Выводы)
 
 ### Описание проекта
 
@@ -13,14 +13,14 @@
 
 Кейс: Компания HeadHunter хочет построить модель, которая бы автоматически определяла примерный уровень заработной платы, подходящей пользователю, исходя из информации, которую он указал о себе.
 
-:arrow_up:[к оглавлению](https://github.com/senami27/Project-1_HH/blob/master/README.md#Оглавление)
+:arrow_up:[к оглавлению](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Project-1/README.md#Оглавление)
 
 ### Краткая информация о данных
 
 Исходный датасет: https://drive.google.com/file/d/1Kb78mAWYKcYlellTGhIjPI-bCcKbGuTn/view.
 Представляет собой CSV файл весом 450+ МБ. Сборка резюме соискателей с платформы HH с количеством строк 44744 в разрезе 12 признаков.
 
-:arrow_up:[к оглавлению](https://github.com/senami27/Project-1_HH/blob/master/README.md#Оглавление)
+:arrow_up:[к оглавлению](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Project-1/README.md#Оглавление)
 
 ### Этапы работы над проектом
 
@@ -41,23 +41,23 @@
 
 4) **Очистка данных:** была произведена работа с дубликатами (удаление), с пропусками в данных (замена константами), с аномальными значениями\выбросами (удаление)
 
-:arrow_up:[к оглавлению](https://github.com/senami27/Project-1_HH/blob/master/README.md#Оглавление)
+:arrow_up:[к оглавлению](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Project-1/README.md#Оглавление)
 
 ### Структура проекта
 
-[data](https://github.com/senami27/Project-1_HH/blob/master/data) - папка с исходными табличными данными
+[data](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Project-1/data) - папка с исходными табличными данными
 
-[visual](https://github.com/senami27/Project-1_HH/blob/master/visual) - папка с результатами визуализации
+[visual](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Project-1/visual) - папка с результатами визуализации
 
-[Project-1.ipynb](https://github.com/senami27/Project-1_HH/blob/master/Project-1.ipynb) - jupyter-ноутбук, с кодом проекта
+[Project-1.ipynb](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Project-1/Project-1.ipynb) - jupyter-ноутбук, с кодом проекта
 
-:arrow_up:[к оглавлению](https://github.com/senami27/Project-1_HH/blob/master/README.md#Оглавление)
+:arrow_up:[к оглавлению](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Project-1/README.md#Оглавление)
 
 ### Результат
 
 В результате проекта получили очищенный и преоразованный CSV файл. Итоговое количество строк 44482 в разрезе 23 признаков.
 
-:arrow_up:[к оглавлению](https://github.com/senami27/Project-1_HH/blob/master/README.md#Оглавление)
+:arrow_up:[к оглавлению](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Project-1/README.md#Оглавление)
 
 ### Выводы
 
@@ -67,4 +67,4 @@
 * Проведен разведывательный анализ с помощью методов визуализации
 * Произведена очистка данных
 
-:arrow_up:[к оглавлению](https://github.com/senami27/Project-1_HH/blob/master/README.md#Оглавление)
+:arrow_up:[к оглавлению](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Project-1/README.md#Оглавление)
