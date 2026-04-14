@@ -41,7 +41,9 @@
 ### Структура проекта
 
 [data](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-1/data) - папка с исходными табличными данными
+
 [visual](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-1/visual) - папка с результатами визуализации plotly
+
 [HW-1.ipynb](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-1/HW-1.ipynb) - jupyter-ноутбук, с кодом проекта
 
 :arrow_up:[к оглавлению](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-1/README.md#Оглавление)
