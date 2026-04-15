@@ -3,7 +3,7 @@
 [1. Описание проекта](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-1/README.md#Описание-проекта)\
 [2. Краткая информация о данных](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-1/README.md#Краткая-информация-о-данных)\
 [3. Этапы работы над проектом](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-1/README.md#Этапы-работы-над-проектом)\
-[4. Структура проекта](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-1/README.mdd#Структура-проекта)\
+[4. Структура проекта](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-1/README.md#Структура-проекта)\
 [5. Результат](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-1/README.md#Результат)\
 [6. Выводы](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-1/README.md#Выводы)
 
