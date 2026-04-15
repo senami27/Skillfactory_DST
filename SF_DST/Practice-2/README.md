@@ -57,7 +57,7 @@ HR-агентство изучает тренды на рынке труда в 
 
 [visual](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-2/visual) - папка с результатами визуализации plotly
 
-[HW-1.ipynb](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-2/HW-2.ipynb) - jupyter-ноутбук, с кодом проекта
+[HW-2.ipynb](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-2/HW-2.ipynb) - jupyter-ноутбук, с кодом проекта
 
 :arrow_up:[к оглавлению](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-2/README.md#Оглавление)
 
