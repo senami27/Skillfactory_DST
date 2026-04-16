@@ -1,71 +1,52 @@
 ## Оглавление
 
-[1. Описание проекта](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-2/README.md#Описание-проекта)\
-[2. Краткая информация о данных](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-2/README.md#Краткая-информация-о-данных)\
-[3. Этапы работы над проектом](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-2/README.md#Этапы-работы-над-проектом)\
-[4. Структура проекта](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-2/README.md#Структура-проекта)\
-[5. Результат](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-2/README.md#Результат)\
-[6. Выводы](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-2/README.md#Выводы)
+[1. Описание проекта](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-3/README.md#Описание-проекта)\
+[2. Краткая информация о данных](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-3/README.md#Краткая-информация-о-данных)\
+[3. Этапы работы над проектом](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-3/README.md#Этапы-работы-над-проектом)\
+[4. Структура проекта](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-3/README.md#Структура-проекта)\
+[5. Результат](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-3/README.md#Результат)\
+[6. Выводы](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-3/README.md#Выводы)
 
 ### Описание проекта
 
-HR-агентство изучает тренды на рынке труда в IT. На основе данных о зарплатах в сфере Data Science за 2020-2022 годы необходимо провести исследование и изучить влияние различных факторов на размер оплаты труда.
+В продолжении работы с датсетом из [практической задачи №1](https://github.com/senami27/Skillfactory_DST/tree/master/SF_DST/Practice-1) нобходимо посторить классификатор, который пзволит своевременно определять уходящих клиентов банка.
 
-:arrow_up:[к оглавлению](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-2/README.md#Оглавление)
+:arrow_up:[к оглавлению](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-3/README.md#Оглавление)
 
 ### Краткая информация о данных
 
-Датасет представляет собой CSV файл весом 37 КБ. В нем представлены данные о зарплатах в сфере Data Science за 2020-2022 годы в количестве 607 строк в разрезе 11 признаков.
+Исходный датасет представляет собой CSV файл весом 669 МБ. В нем представлены данные об оттоке клиентов некоторого банка с количеством строк 10000 в разрезе 13 признаков. Пропуски и дубликаты отсутствуют.
 
-Оригинальный датасет: [Data Science Job Salaries (kaggle.com)](https://www.kaggle.com/datasets/ruchi798/data-science-job-salaries). 
-
-:arrow_up:[к оглавлению](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-2/README.md#Оглавление)
+:arrow_up:[к оглавлению](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-3/README.md#Оглавление)
 
 ### Этапы работы над проектом
 
 1) Импортирование неодходимых библиотек.
-2) Подгрузка данных. Задаем уровень значимости.
-3) Описательный анализ данных:
-    - работа с пропусками;
-    - удаление неинформативных признаков и дубликатов;
-    - распределение признаов на категориальные и числовые;
-    - создание вспомогательных признаков;
-    - визуализация распределения внутри каждого признака.
-5) Разведывательный анаиз данных:
-    - Расперделение ЗП в зависимости от уровня квалификации;
-    - Расперделение ЗП в зависимости от года;
-    - Расперделение ЗП в зависимости от специальности;
-    - Расперделение ЗП в зависимости от объема работ, выполненных удаленно;
-    - Расперделение ЗП в зависимости от георафической удаленности;
-    - Расперделение ЗП в зависимости от размера компании;
-    - Сравнение ЗП специалистов Data Science и Data Engineer.
-6) Статистический анализ данных (проверка на нормальность, статистические тесты, корреляционный анализ):
-    - Какие факторы влияют на ЗП специалиста DS (тест Краскелла-Уоллиса);
-    - Наблюдается ли ежегодный рост ЗП у специалистов Data Science (тест Краскелла-Уоллиса);
-    - Как соотносятся ЗП специалистов Data Science в компаниях различных размеров (тест Краскелла-Уоллиса);
-    - Как соотносятся ЗП специалистов Data Science и Data Engineer в 2022 году (критерий Манна-Уитни);
-    - Есть ли связь между наличием должностей DS/DE и размером компании (критерий Хи-квадрат);
-    - Размеры ЗП удалещиков выше, чем у офисных работников (критерий Манна-Уитни);
-    - Есть ли значимая разница в ЗП для должностей DS/DE с опытом работы Executive (Двухвыборочный t-критерий).
-7) Выводы и подтверждение/опровержение гипотез.
+2) Подгрузка данных.
+3) Разведывательный анализ данных, создание дополнительных признаков, ограничение выборки.
+4) Сравнительный анализ выборок.
+5) Построение обучающих моделей, поиск лучших параметров и их оптимизация:
+    - Построение модели логистической регрессии;
+    - Построение модели логистической регрессии на полиномиальных признаках;
+    - Построение модели Дерево решений;
+    - Построение модели Случайный лес;
+6) Предсказание вероятности ухода конкретного клиента при помощи построенных моделей обучения.
 
-:arrow_up:[к оглавлению](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-2/README.md#Оглавление)
+:arrow_up:[к оглавлению](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-3/README.md#Оглавление)
 
 ### Структура проекта
 
-[data](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-2/data) - папка с исходными табличными данными
+[data](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-3/data) - папка с исходными табличными данными
 
-[visual](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-2/visual) - папка с результатами визуализации plotly
+[HW-3.ipynb](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-3/HW-3.ipynb) - jupyter-ноутбук, с кодом проекта
 
-[HW-2.ipynb](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-2/HW-2.ipynb) - jupyter-ноутбук, с кодом проекта
-
-:arrow_up:[к оглавлению](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-2/README.md#Оглавление)
+:arrow_up:[к оглавлению](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-3/README.md#Оглавление)
 
 ### Результат
 
-В результате проекта была произведена работа по подготовке данных, выведены гипотезы на этапе разведывательного анализа, а также произведены статистические тесты, для подтверждения найденных закономерностей.
+В результате проекта были построены несколько моделей для предсказания оттока клиентов банка.
 
-:arrow_up:[к оглавлению](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-1/README.md#Оглавление)
+:arrow_up:[к оглавлению](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-3/README.md#Оглавление)
 
 ### Выводы
 
@@ -73,11 +54,11 @@ HR-агентство изучает тренды на рынке труда в 
 
 * Загружены и подготовлены;
 * Проведен разведывательный анализ данных и визуализация результатов, отображающая взаимосвязи между признаками;
-* Были произведены статстические тесты, для проверки гипотез;
-* Подготовлены выводы о закономерностях в данных, исследованы факторы, влияющие на заработную плату специалистов сферы Data Science.
+* Было построено несколько моделей машинного обучения для предсказания оттока клиентов;
+* Было произведено предсказание ухода из банка для конкретного клиента на основе лучших моделей.
 
-В результате проведенной работы были найдены интересные закономерности в данных.
+Наилучшие результаты показали модель случайного леса и модель логистической регрессии с полиномиальными коэффициентаи.
 
-Для проверки статистической значимости сделанных выводов были использованы различные тесты (Краскелла-Уоллиса, Манна-Уитни, Хи-квадрат, Двухвыборочный t-критерий).
+Для конкретного клиента вероятность прекратить сотрудничество была предсказана 2-мя моделями как более 60%. Скорее всего клиент уйдет. 
 
-:arrow_up:[к оглавлению](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-2/README.md#Оглавление)
+:arrow_up:[к оглавлению](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-3/README.md#Оглавление)
