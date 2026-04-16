@@ -65,7 +65,7 @@ HR-агентство изучает тренды на рынке труда в 
 
 В результате проекта была произведена работа по подготовке данных, выведены гипотезы на этапе разведывательного анализа, а также произведены статистические тесты, для подтверждения найденных закономерностей.
 
-:arrow_up:[к оглавлению](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-1/README.md#Оглавление)
+:arrow_up:[к оглавлению](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-2/README.md#Оглавление)
 
 ### Выводы
 
