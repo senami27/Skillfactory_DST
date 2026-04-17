@@ -1,64 +1,57 @@
 ## Оглавление
 
-[1. Описание проекта](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-3/README.md#Описание-проекта)\
-[2. Краткая информация о данных](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-3/README.md#Краткая-информация-о-данных)\
-[3. Этапы работы над проектом](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-3/README.md#Этапы-работы-над-проектом)\
-[4. Структура проекта](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-3/README.md#Структура-проекта)\
-[5. Результат](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-3/README.md#Результат)\
-[6. Выводы](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-3/README.md#Выводы)
+[1. Описание проекта](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-4/README.md#Описание-проекта)\
+[2. Краткая информация о данных](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-4/README.md#Краткая-информация-о-данных)\
+[3. Этапы работы над проектом](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-4/README.md#Этапы-работы-над-проектом)\
+[4. Структура проекта](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-4/README.md#Структура-проекта)\
+[5. Результат](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-4/README.md#Результат)\
+[6. Выводы](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-4/README.md#Выводы)
 
 ### Описание проекта
 
-В продолжении работы с датсетом из [практической задачи №1](https://github.com/senami27/Skillfactory_DST/tree/master/SF_DST/Practice-1) нобходимо посторить классификатор, который пзволит своевременно определять уходящих клиентов банка.
+Необходимо обучить модель линейной регрессии на отобранных 3-х признаках и сравнить полученные результаты.
 
-:arrow_up:[к оглавлению](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-3/README.md#Оглавление)
+:arrow_up:[к оглавлению](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-4/README.md#Оглавление)
 
 ### Краткая информация о данных
 
-Исходный датасет представляет собой CSV файл весом 669 МБ. В нем представлены данные об оттоке клиентов некоторого банка с количеством строк 10000 в разрезе 13 признаков. Пропуски и дубликаты отсутствуют.
+Исходный датасет представляет собой xlsx файл весом 495 КБ. В нем представлены данные с количеством строк более 7000 в разрезе 12 признаков типа object, float64, int64, иеются пропуски. В связи с этим необходимо подготовить данные к работе: удалить пропуски, преобразовать признаки, выделить только нужные данные для работы.
 
-:arrow_up:[к оглавлению](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-3/README.md#Оглавление)
+:arrow_up:[к оглавлению](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-4/README.md#Оглавление)
 
 ### Этапы работы над проектом
 
 1) Импортирование неодходимых библиотек.
-2) Подгрузка данных.
-3) Разведывательный анализ данных, создание дополнительных признаков, ограничение выборки.
-4) Сравнительный анализ выборок.
-5) Построение обучающих моделей, поиск лучших параметров и их оптимизация:
-    - Построение модели логистической регрессии;
-    - Построение модели логистической регрессии на полиномиальных признаках;
-    - Построение модели Дерево решений;
-    - Построение модели Случайный лес;
-6) Предсказание вероятности ухода конкретного клиента при помощи построенных моделей обучения.
+2) Подгрузка данных и обработка данных (удаление пропусков, преобазование признаков).
+3) Построение логистической регрессии на всех числовых признаках.
+4) Отбор столюцов с помощью рекурсивного исключения признаков (RFE) и обучение модели на них.
+5) Отбор столбцов с помощью выбора k-лучших переменных (SelectKBest) и обучеие модели на них.
+6) Сравнение моделей на основании полученных метрик и выбор оптимальной.
 
-:arrow_up:[к оглавлению](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-3/README.md#Оглавление)
+:arrow_up:[к оглавлению](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-4/README.md#Оглавление)
 
 ### Структура проекта
 
-[data](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-3/data) - папка с исходными табличными данными
+[data](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-4/data) - папка с исходными табличными данными
 
-[HW-3.ipynb](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-3/HW-3.ipynb) - jupyter-ноутбук, с кодом проекта
+[HW-4.ipynb](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-4/HW-4.ipynb) - jupyter-ноутбук, с кодом проекта
 
-:arrow_up:[к оглавлению](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-3/README.md#Оглавление)
+:arrow_up:[к оглавлению](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-4/README.md#Оглавление)
 
 ### Результат
 
-В результате проекта были построены несколько моделей для предсказания оттока клиентов банка.
+Было построено 3 варианта модели логистической регрессии и выбрана оптимальная.
 
-:arrow_up:[к оглавлению](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-3/README.md#Оглавление)
+:arrow_up:[к оглавлению](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-4/README.md#Оглавление)
 
 ### Выводы
 
 В процессе выполнения кейса первоначальные данные были:
 
 * Загружены и подготовлены;
-* Проведен разведывательный анализ данных и визуализация результатов, отображающая взаимосвязи между признаками;
-* Было построено несколько моделей машинного обучения для предсказания оттока клиентов;
-* Было произведено предсказание ухода из банка для конкретного клиента на основе лучших моделей.
+* Были отобраны признаки с помощью RFE и SelectKBest;
+* Было построено несколько моделей машинного обучения;
 
-Наилучшие результаты показали модель случайного леса и модель логистической регрессии с полиномиальными коэффициентаи.
+Предпочтение было отдано модели для всех числовых признаков, так как она более детализирована, но по показателям качества различия незначительны с моделью на отобранных SelectKBest 3-х признаках. 
 
-Для конкретного клиента вероятность прекратить сотрудничество была предсказана 2-мя моделями как более 60%. Скорее всего клиент уйдет. 
-
-:arrow_up:[к оглавлению](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-3/README.md#Оглавление)
+:arrow_up:[к оглавлению](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-4/README.md#Оглавление)
