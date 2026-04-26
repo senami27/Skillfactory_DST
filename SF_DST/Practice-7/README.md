@@ -1,60 +1,80 @@
 ## Оглавление
 
-[1. Описание проекта](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-6/README.md#Описание-проекта)\
-[2. Краткая информация о данных](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-6/README.md#Краткая-информация-о-данных)\
-[3. Этапы работы над проектом](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-6/README.md#Этапы-работы-над-проектом)\
-[4. Структура проекта](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-6/README.md#Структура-проекта)\
-[5. Результат](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-6/README.md#Результат)\
-[6. Выводы](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-6/README.md#Выводы)
+[1. Описание проекта](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-7/README.md#Описание-проекта)\
+[2. Краткая информация о данных](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-7/README.md#Краткая-информация-о-данных)\
+[3. Этапы работы над проектом](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-7/README.md#Этапы-работы-над-проектом)\
+[4. Структура проекта](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-7/README.md#Структура-проекта)\
+[5. Результат](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-7/README.md#Результат)\
+[6. Выводы](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-7/README.md#Выводы)
 
 ### Описание проекта
 
-Необходимо решить задачу кластеризации покупателей некоторой продуктовой фирмы. Для этого снизим размерность данных с помощью PCA и оценим количество кластеров, качество полученной модели кластеризации на основе k-means и сделаем финальный портрет покупателя из каждой группы.
+У Василия, основателя компании «Газ-Таз-Ваз-Нефть», дела идут в гору: у него уже функционирует 200 скважин для добычи газа. В этом году он открывает 30 новых скважин. Однако в целях оптимизации расходов и повышения дохода Василию необходимо оценить, сколько денег будет приносить ему каждая из скважин, а также понять, какие факторы (параметры скважин) потенциально сильнее всего повлияют на объём добычи газа.
 
-:arrow_up:[к оглавлению](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-6/README.md#Оглавление)
+Задача — построить регрессионную модель, которая прогнозирует выработку газа на скважине (целевой признак — Prod) на основе остальных характеристик скважины, и проинтерпретировать результаты работы вашей модели.
+
+:arrow_up:[к оглавлению](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-7/README.md#Оглавление)
 
 ### Краткая информация о данных
 
-Исходный датасет представляет собой csv файл весом 216 КБ. Количество строк - 2240, столбцов - 29. Тип данных float64, int64, object. В данных есть пропуски, необходима базовая предобработка и создание нужных признаков.
+Исходный датасет представляет собой csv файл весом 10 КБ. Количество строк - 200, столбцов - 8. Тип данных float64, int64. В данных дубликаты и пропуски отсутствуют.
 
-В датасете представлены персональные данные покупателей, такие как состав семьи, доход, вовлеченность в маркетинговые кампании, интересы по разным категориям товаров.
+В датасете представлены данные о добыче газа на скважинах компании, включая следующие признаки:
+- *Well* — идентификатор скважины;
+- *Por* — пористость скважины (%);
+- *Perm* — проницаемость скважины;
+- *AI* — акустический импеданс;
+- *Brittle* — коэффициент хрупкости скважины (%);
+- *TOC* — общий органический углерод (%);
+- *VR* — коэффициент отражения витринита (%);
+- *Prod* — добыча газа в сутки (млн. кубических футов).
 
-:arrow_up:[к оглавлению](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-6/README.md#Оглавление)
+:arrow_up:[к оглавлению](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-7/README.md#Оглавление)
 
 ### Этапы работы над проектом
 
-1) Импортирование неодходимых библиотек.
-3) Подгрузка и первичная бработка данных (удаление пропусков, изменение типов, создание признаков, работа с выбросами).
-4) Корреляционный анализ численных признаков.
-5) Кодировкание признаков с помощью  LabelEncoder и стандартизация.
-6) Снижение размерности (PCA).
-7) Построение модели кластеризации (k-means) с определнием оптимального кол-ва кластеров с Elbow Method.
-8) Анализ результатов кластеризации и выводы.
+В первой мы построим 
+Во второй мы займёмся построением .
 
-:arrow_up:[к оглавлению](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-6/README.md#Оглавление)
+1) Импортирование неодходимых библиотек.
+3) Подгрузка и первичный анализ данных.
+4) Построение простейшей модели линейной регрессии.
+5) Отбор наиболее значимых для прогнозирования факторов.
+6) Построение модели полиномиальной регрессии с регуляризацией.
+7) Аналз итоговых результатов моделирования.
+8) Выводы по проекту.
+
+:arrow_up:[к оглавлению](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-7/README.md#Оглавление)
 
 ### Структура проекта
 
-[data](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-6/data) - папка с исходными табличными данными
+[data](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-7/data) - папка с исходными табличными данными
 
-[HW-6.ipynb](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-6/HW-6.ipynb) - jupyter-ноутбук, с кодом проекта
+[HW-7.ipynb](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-7/HW-7.ipynb) - jupyter-ноутбук, с кодом проекта
 
-:arrow_up:[к оглавлению](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-6/README.md#Оглавление)
+:arrow_up:[к оглавлению](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-7/README.md#Оглавление)
 
 ### Результат
 
-Был проведен анализ и подготовка данных, снижена размерность с помощью PCA, построена модель кластеризации k-means.
+Было проведено обучение 5 моделей:
 
-:arrow_up:[к оглавлению](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-6/README.md#Оглавление)
+- Линейная регрессия;
+- Линейная регрессия на полиномиальных признаках;
+- Модель с L1-регуляризацией-Lasso;
+- Модель с L2-регуляризацией-Ridge;
+- Модель ElasticNet;
+
+и выбрана лучшая по метрикам качества MAPE для тренировочной и тестовой выборок.
+
+:arrow_up:[к оглавлению](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-7/README.md#Оглавление)
 
 ### Выводы
 
 В процессе выполнения кейса:
 
-* Данные были загружены и подготовлены;
-* Была снижена размерность данных с помощью PCA.
-* Построена модель кластеризации k-means;
+* Данные были загружены, проанализированы и подготовлены;
+* Проведено обучение 5 машинных моделей, включая модели с оптимизацией.
 
-Разбиение кластеров приблиительно равно, наибольшие траты характерны для группы, где больше заработок. 
+В данной задаче лучшие результаты показали модели линейной регрессии с полниомиальными коэффициентами и L1-регуляризацией-Lasso, а также ElasticNet с L1-регуляризацией.
 
-:arrow_up:[к оглавлению](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-6/README.md#Оглавление)
+:arrow_up:[к оглавлению](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-7/README.md#Оглавление)
