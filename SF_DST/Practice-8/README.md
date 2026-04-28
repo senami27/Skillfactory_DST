@@ -1,77 +1,62 @@
 ## Оглавление
 
-[1. Описание проекта](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-7/README.md#Описание-проекта)\
-[2. Краткая информация о данных](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-7/README.md#Краткая-информация-о-данных)\
-[3. Этапы работы над проектом](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-7/README.md#Этапы-работы-над-проектом)\
-[4. Структура проекта](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-7/README.md#Структура-проекта)\
-[5. Результат](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-7/README.md#Результат)\
-[6. Выводы](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-7/README.md#Выводы)
+[1. Описание проекта](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-8/README.md#Описание-проекта)\
+[2. Краткая информация о данных](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-8/README.md#Краткая-информация-о-данных)\
+[3. Этапы работы над проектом](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-8/README.md#Этапы-работы-над-проектом)\
+[4. Структура проекта](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-8/README.md#Структура-проекта)\
+[5. Результат](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-8/README.md#Результат)\
+[6. Выводы](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-8/README.md#Выводы)
 
 ### Описание проекта
 
-У Василия, основателя компании «Газ-Таз-Ваз-Нефть», дела идут в гору: у него уже функционирует 200 скважин для добычи газа. В этом году он открывает 30 новых скважин. Однако в целях оптимизации расходов и повышения дохода Василию необходимо оценить, сколько денег будет приносить ему каждая из скважин, а также понять, какие факторы (параметры скважин) потенциально сильнее всего повлияют на объём добычи газа.
+Необходимо реализовать координатный спуск, стохастический градиентный спуск, оценить качество обеих полученных моделей с помощью MSE и MAE, и проинтерпретировать результаты работы.
 
-Задача — построить регрессионную модель, которая прогнозирует выработку газа на скважине (целевой признак — Prod) на основе остальных характеристик скважины, и проинтерпретировать результаты работы вашей модели.
-
-:arrow_up:[к оглавлению](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-7/README.md#Оглавление)
+:arrow_up:[к оглавлению](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-8/README.md#Оглавление)
 
 ### Краткая информация о данных
 
-Исходный датасет представляет собой csv файл весом 10 КБ. Количество строк - 200, столбцов - 8. Тип данных float64, int64. В данных дубликаты и пропуски отсутствуют.
+Исходный датасет представляет собой csv файл весом 5 КБ. Количество строк - 200, столбцов - 5. Тип данных float64, int64. В данных дубликаты и пропуски отсутствуют.
 
-В датасете представлены данные о добыче газа на скважинах компании, включая следующие признаки:
-- *Well* — идентификатор скважины;
-- *Por* — пористость скважины (%);
-- *Perm* — проницаемость скважины;
-- *AI* — акустический импеданс;
-- *Brittle* — коэффициент хрупкости скважины (%);
-- *TOC* — общий органический углерод (%);
-- *VR* — коэффициент отражения витринита (%);
-- *Prod* — добыча газа в сутки (млн. кубических футов).
-
-:arrow_up:[к оглавлению](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-7/README.md#Оглавление)
+:arrow_up:[к оглавлению](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-8/README.md#Оглавление)
 
 ### Этапы работы над проектом
 
 1) Импортирование неодходимых библиотек.
-3) Подгрузка и первичный анализ данных.
-4) Построение простейшей модели линейной регрессии.
-5) Отбор наиболее значимых для прогнозирования факторов.
-6) Построение модели полиномиальной регрессии с регуляризацией.
-7) Аналз итоговых результатов моделирования.
-8) Выводы по проекту.
+3) Подгрузка и подготовка данных.
+4) Реализация алгоритма координатного спуска.
+5) Реализация стахостического градиентного спуска:
+   - масштабирование столбцов исходой таблицы;
+   - создание функции для вычисления среднеквадратической ошибки;
+   - составление наивного прогноза (среднее значение);
+   - создание функции для получения вектора прогнозов;
+   - создание функции для реализации шага стахостического градиентного спуска;
+   - создание функции для реализации стахостического градиентного спуска;
+8) Оценка качества обеих полученных моделей с помощью MSE и MAE.
+9) Выводы по проекту.
 
-:arrow_up:[к оглавлению](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-7/README.md#Оглавление)
+:arrow_up:[к оглавлению](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-8/README.md#Оглавление)
 
 ### Структура проекта
 
-[data](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-7/data) - папка с исходными табличными данными
+[data](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-8/data) - папка с исходными табличными данными
 
-[HW-7.ipynb](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-7/HW-7.ipynb) - jupyter-ноутбук, с кодом проекта
+[HW-8.ipynb](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-8/HW-8.ipynb) - jupyter-ноутбук, с кодом проекта
 
-:arrow_up:[к оглавлению](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-7/README.md#Оглавление)
+:arrow_up:[к оглавлению](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-8/README.md#Оглавление)
 
 ### Результат
 
-Было проведено обучение 5 моделей:
+Были реализованы функции координатного и градиентного спусков и проведена оценка их с помощью MSE, MAE.
 
-- Линейная регрессия;
-- Линейная регрессия на полиномиальных признаках;
-- Модель с L1-регуляризацией-Lasso;
-- Модель с L2-регуляризацией-Ridge;
-- Модель ElasticNet;
-
-и выбрана лучшая по метрикам качества MAPE для тренировочной и тестовой выборок.
-
-:arrow_up:[к оглавлению](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-7/README.md#Оглавление)
+:arrow_up:[к оглавлению](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-8/README.md#Оглавление)
 
 ### Выводы
 
-В процессе выполнения кейса:
+В процессе выполнения задачи:
+- Данные были загружены, проанализированы и подготовлены к построению моделей;
+- Реализованы функции координатного и градиентного спусков;
+- Проведена оценка качества моделей;
 
-* Данные были загружены, проанализированы и подготовлены;
-* Проведено обучение 5 машинных моделей, включая модели с оптимизацией.
+Оба алгоритма сошлись на одном уровне (метрика MSE), но в разных точках пространства (разные вектора весов).
 
-В данной задаче лучшие результаты показали модели линейной регрессии с полниомиальными коэффициентами и L1-регуляризацией-Lasso, а также ElasticNet с L1-регуляризацией.
-
-:arrow_up:[к оглавлению](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-7/README.md#Оглавление)
+:arrow_up:[к оглавлению](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-8/README.md#Оглавление)
