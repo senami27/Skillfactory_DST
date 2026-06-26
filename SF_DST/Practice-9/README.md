@@ -1,62 +1,65 @@
 ## Оглавление
 
-[1. Описание проекта](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-8/README.md#Описание-проекта)\
-[2. Краткая информация о данных](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-8/README.md#Краткая-информация-о-данных)\
-[3. Этапы работы над проектом](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-8/README.md#Этапы-работы-над-проектом)\
-[4. Структура проекта](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-8/README.md#Структура-проекта)\
-[5. Результат](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-8/README.md#Результат)\
-[6. Выводы](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-8/README.md#Выводы)
+[1. Описание проекта](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-9/README.md#Описание-проекта)\
+[2. Краткая информация о данных](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-9/README.md#Краткая-информация-о-данных)\
+[3. Этапы работы над проектом](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-9/README.md#Этапы-работы-над-проектом)\
+[4. Структура проекта](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-9/README.md#Структура-проекта)\
+[5. Результат](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-9/README.md#Результат)\
+[6. Выводы](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-9/README.md#Выводы)
 
 ### Описание проекта
 
-Необходимо реализовать координатный спуск, стохастический градиентный спуск, оценить качество обеих полученных моделей с помощью MSE и MAE, и проинтерпретировать результаты работы.
+Необходимо реализовать классификацию спам-сообщений уже с использованием готовых функций.
 
-:arrow_up:[к оглавлению](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-8/README.md#Оглавление)
+В библиотеке sklearn есть несколько байесовских классификаторов:
+
+*GaussianNB* — самый простой вариант, работает с непрерывными признаками;
+*MultinomialNB*  — работает с категориальными признаками, текстами и несбалансированными выборками;
+*ComplementNB* — улучшенная версия MultinomialNB, стабильно показывает более высокое качество в задачах классификации текстов;
+*BernoulliNB* — версия для работы с бинарными признаками;
+*CategoricalNB* — работает с категориальными признаками, предполагает кодировку данных через OrdinalEncoder.
+
+:arrow_up:[к оглавлению](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-9/README.md#Оглавление)
 
 ### Краткая информация о данных
 
-Исходный датасет представляет собой csv файл весом 5 КБ. Количество строк - 200, столбцов - 5. Тип данных float64, int64. В данных дубликаты и пропуски отсутствуют.
+Исходный датасет представляет собой csv файл весом 4 КБ. Количество строк - 3000, столбцов - 2. Тип данных int64 и object, в столбцах присутствуют пропуски.
 
-:arrow_up:[к оглавлению](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-8/README.md#Оглавление)
+:arrow_up:[к оглавлению](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-9/README.md#Оглавление)
 
 ### Этапы работы над проектом
 
 1) Импортирование неодходимых библиотек.
-3) Подгрузка и подготовка данных.
-4) Реализация алгоритма координатного спуска.
-5) Реализация стахостического градиентного спуска:
-   - масштабирование столбцов исходой таблицы;
-   - создание функции для вычисления среднеквадратической ошибки;
-   - составление наивного прогноза (среднее значение);
-   - создание функции для получения вектора прогнозов;
-   - создание функции для реализации шага стахостического градиентного спуска;
-   - создание функции для реализации стахостического градиентного спуска;
-8) Оценка качества обеих полученных моделей с помощью MSE и MAE.
-9) Выводы по проекту.
+2) Подгрузка и подготовка данных.
+3) Определение целевой переменной и предикторов.
+4) Реализовать обучение модели наивного байесовского классификатора;
+5) Оценить качество модели с помощью кривой ROC-AUC;
+6) Оценить качество полученной модели с помощью метрики F1.
 
-:arrow_up:[к оглавлению](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-8/README.md#Оглавление)
+:arrow_up:[к оглавлению](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-9/README.md#Оглавление)
 
 ### Структура проекта
 
-[data](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-8/data) - папка с исходными табличными данными
+[data](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-9/data) - папка с исходными табличными данными
 
-[HW-8.ipynb](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-8/HW-8.ipynb) - jupyter-ноутбук, с кодом проекта
+[HW-9.ipynb](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-9/HW-9.ipynb) - jupyter-ноутбук, с кодом проекта
 
-:arrow_up:[к оглавлению](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-8/README.md#Оглавление)
+:arrow_up:[к оглавлению](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-9/README.md#Оглавление)
 
 ### Результат
 
-Были реализованы функции координатного и градиентного спусков и проведена оценка их с помощью MSE, MAE.
+Была обучена модель наивного байесовского классификатора и построена визуализация с помощью кривой ROC, также реализована функция поиска оптимального гиперпараметра для наивного байесовского классификатора.
 
-:arrow_up:[к оглавлению](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-8/README.md#Оглавление)
+:arrow_up:[к оглавлению](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-9/README.md#Оглавление)
 
 ### Выводы
 
 В процессе выполнения задачи:
-- Данные были загружены, проанализированы и подготовлены к построению моделей;
-- Реализованы функции координатного и градиентного спусков;
-- Проведена оценка качества моделей;
+- Данные были загружены, проанализированы и подготовлены к построению модели;
+- Реализовано обучение модели наивного байесовского классификатора;
+- Проведена оценка качества модели с помощью кривой ROC-AUC;
+- Реализована функция поиска оптимального гиперпараметра для наивного байесовского классификатора.
 
-Оба алгоритма сошлись на одном уровне (метрика MSE), но в разных точках пространства (разные вектора весов).
+Подобрано лучшее значение гиперпараметра a = 0.35 - даёт более высокий F1 на тестовой выборке, а значит улучшено качество модели.
 
-:arrow_up:[к оглавлению](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-8/README.md#Оглавление)
+:arrow_up:[к оглавлению](https://github.com/senami27/Skillfactory_DST/blob/master/SF_DST/Practice-9/README.md#Оглавление)
